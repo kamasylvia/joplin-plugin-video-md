@@ -1,1 +1,9 @@
-console.log("Hello from the minimal Joplin plugin!");
+joplin.plugins.register({
+	onStart: async function() {
+		await joplin.contentScripts.register(
+			'markdownItPlugin',
+			'video-md',
+			'./videoMd.js'
+		);
+	},
+});

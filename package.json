@@ -1,0 +1,14 @@
+{
+	"name": "joplin-plugin-video-md",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Render remote video URLs written as Markdown images as inline video players.",
+	"scripts": {
+		"lint": "node --check dist/index.js && node --check dist/videoMd.js",
+		"test": "node test/render.test.js",
+		"build": "mkdir -p publish && tar -cf publish/io.github.kamasylvia.video-md.jpl -C dist manifest.json index.js videoMd.js"
+	},
+	"devDependencies": {
+		"markdown-it": "^14.1.0"
+	}
+}
