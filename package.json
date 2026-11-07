@@ -23,7 +23,7 @@
 		"node": ">=20"
 	},
 	"devDependencies": {
-		"markdown-it": "^13.0.2",
+		"markdown-it": "^15.0.3",
 		"tar": "^7.5.22"
 	}
 }
