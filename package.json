@@ -3,12 +3,27 @@
 	"version": "1.0.0",
 	"private": true,
 	"description": "Render remote video URLs written as Markdown images as inline video players.",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kamasylvia/joplin-plugin-video-md.git"
+	},
+	"homepage": "https://github.com/kamasylvia/joplin-plugin-video-md#readme",
+	"bugs": {
+		"url": "https://github.com/kamasylvia/joplin-plugin-video-md/issues"
+	},
+	"keywords": ["joplin-plugin", "joplin", "video", "markdown", "media"],
 	"scripts": {
-		"lint": "node --check dist/index.js && node --check dist/videoMd.js",
-		"test": "node test/render.test.js",
-		"build": "mkdir -p publish && tar -cf publish/io.github.kamasylvia.video-md.jpl -C dist manifest.json index.js videoMd.js"
+		"lint": "node --check src/index.js && node --check src/videoMd.js && node --check scripts/build.js",
+		"test": "node test/render.test.js && node test/register.test.js",
+		"dist": "node scripts/build.js",
+		"build": "npm run dist"
+	},
+	"engines": {
+		"node": ">=20"
 	},
 	"devDependencies": {
-		"markdown-it": "^14.1.0"
+		"markdown-it": "^13.0.2",
+		"tar": "^7.5.22"
 	}
 }

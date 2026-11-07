@@ -2,7 +2,7 @@
 
 const assert = require('node:assert/strict');
 const MarkdownIt = require('markdown-it');
-const contentScript = require('../dist/videoMd.js');
+const contentScript = require('../src/videoMd.js');
 
 const setup = contentScript.default({});
 

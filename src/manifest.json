@@ -9,5 +9,6 @@
 	"homepage_url": "https://github.com/kamasylvia/joplin-plugin-video-md",
 	"repository_url": "https://github.com/kamasylvia/joplin-plugin-video-md",
 	"keywords": ["video", "markdown", "media", "player"],
-	"categories": []
+	"categories": [],
+	"platforms": ["desktop"]
 }
