@@ -1,5 +1,7 @@
 # Video Markdown for Joplin
 
+English | [简体中文](README.zh-CN.md)
+
 Write remote videos in notes with ordinary Markdown image syntax:
 
 ```md

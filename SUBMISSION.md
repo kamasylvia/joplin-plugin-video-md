@@ -1,11 +1,12 @@
 # Submission Notes
 
-Status: **prepared, not submitted.**
+Status: **prepared, not submitted.** The repository is public; publishing to
+the Joplin registry is a separate submission step.
 
 ## Pre-flight checklist
 
-- [ ] Repository is public.
-- [ ] `LICENSE` (MIT) is present.
+- [x] Repository is public.
+- [x] `LICENSE` (MIT) is present.
 - [ ] `npm ci && npm test && npm run dist` passes from a clean checkout.
 - [ ] `publish/` contains exactly one `.jpl` and one `.json`.
 - [ ] `git status --porcelain` is empty and `HEAD` is pushed.
@@ -18,7 +19,7 @@ Status: **prepared, not submitted.**
 Joplin's plugin pipeline is repository-based: it scans the repository at a
 specific commit, reviews the report, then builds and publishes from source.
 
-1. Make the repository public.
+1. Repository is public (visibility is independent of registry publication).
 2. Push a clean commit.
 3. Verify locally:
 
